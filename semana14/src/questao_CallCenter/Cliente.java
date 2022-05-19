@@ -1,3 +1,5 @@
+package questao_CallCenter;
+
 public class Cliente extends Thread {
     private int id_c;
     private CallCenter cc;

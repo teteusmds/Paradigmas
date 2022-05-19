@@ -1,5 +1,6 @@
+package questao_CallCenter;
+
 import java.util.Random;
-import java.util.concurrent.Semaphore;
 
 public class CallCenter  {
     private Operador op1;
@@ -23,7 +24,7 @@ public class CallCenter  {
         else if (op4.getSemaforo().getQueueLength() <= 0)op4.atender(c);
         else if (op5.getSemaforo().getQueueLength() <= 0)op5.atender(c);
         else{
-            System.out.println("Cliente "+c.getId_c()+" esta aguardando na fila!");
+            System.out.println("questao_CallCenter.Cliente "+c.getId_c()+" esta aguardando na fila!");
             Random r = new Random();
             switch (r.nextInt(4)) {
                 case 0 -> op1.atender(c);

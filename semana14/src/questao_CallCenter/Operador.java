@@ -1,3 +1,5 @@
+package questao_CallCenter;
+
 import java.util.Random;
 import java.util.concurrent.Semaphore;
 
@@ -25,7 +27,7 @@ public class Operador  {
     public void atender(Cliente c){
         try {
             semaforo.acquire();
-            System.out.println("Operador " + id +  " Iniciando atendimento ao cliente:"+ c.getId_c());
+            System.out.println("questao_CallCenter.Operador " + id +  " Iniciando atendimento ao cliente:"+ c.getId_c());
             Random rng = new Random();
             Thread.sleep(rng.nextInt(4000)+1000);
             semaforo.release();
